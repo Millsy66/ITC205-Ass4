@@ -1,3 +1,16 @@
-Hotel
+==============================================================================
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Hotel  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+==============================================================================
+(see separate screen shot word doc for screen shots of variable results of debug)
+
 BUG 1 - Incorrect Service charges
----------------------------------
+Service Charges display as zero at checkout
+------------------------------------------------------------------------------
+HYPOTHESIS 1:  	Values are not printing correctly. The charges are correct but
+              	are not outputting to the UI.
+
+PREDICTION:    	The service charges are not recorded correctly and will be $0.00
+TEST:          	Look at the value of service charge immediately before the
+               	printout of the service charge			   
+RESULT:		Values are wrong	
+----------------
