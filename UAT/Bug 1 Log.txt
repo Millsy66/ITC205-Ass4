@@ -12,11 +12,18 @@ HYPOTHESIS 1:  	Values are not printing correctly. The charges are correct but
 PREDICTION:    	The service charges are not recorded correctly and will be $0.00
 TEST:          	Look at the value of service charge immediately before the
                	printout of the service charge			   
-RESULT:		Values are wrong	
+RESULT:			Values are wrong	
 ----------------
 HYPOTHESES 2:  	Values are not coming in correctly - bad input
 
-PREDICTION:	The service charges are not recorded correctly and will be $0.00
-TEST:		Inspect values coming into RecordServiceCtrl
-RESULT:		Cost is recorded with correct value (20)
+PREDICTION:		The service charges are not recorded correctly and will be $0.00
+TEST:			Inspect values coming into RecordServiceCtrl
+RESULT:			Cost is recorded with correct value (20)
+----------------
+
+HYPOTHESIS 3:	Values incorrect coming into Hotel
+
+PREDICTION:		The service charges are not correctly added to Booking
+TEST:			Look at values coming into Hotel addServiceCharge()
+RESULT:			Cost as local variable is correct, but cost when adding booking charge is incorrect
 ----------------
