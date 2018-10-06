@@ -13,17 +13,27 @@ PREDICTION:    	The service charges are not recorded correctly and will be $0.00
 TEST:          	Look at the value of service charge immediately before the
                	printout of the service charge			   
 RESULT:			Values are wrong	
+
 ----------------
 HYPOTHESES 2:  	Values are not coming in correctly - bad input
 
 PREDICTION:		The service charges are not recorded correctly and will be $0.00
 TEST:			Inspect values coming into RecordServiceCtrl
 RESULT:			Cost is recorded with correct value (20)
-----------------
 
+----------------
 HYPOTHESIS 3:	Values incorrect coming into Hotel
 
 PREDICTION:		The service charges are not correctly added to Booking
 TEST:			Look at values coming into Hotel addServiceCharge()
 RESULT:			Cost as local variable is correct, but cost when adding booking charge is incorrect
+
 ----------------
+HYPOTHESIS 4:	Values incorrect coming from Booking
+
+PREDICTION:		The service charges are not recorded correctly and will be $0.00. Code typo line 141
+				results in wrong data. Fix typo and run program using test script (UAT) This should fix 
+				the bug
+TEST:			Change Line 141 in Booking addServiceCharge() "cosst -> cost" and run program (UAT)
+RESULT:			Cost now correctly displayed in checkout
+ 
