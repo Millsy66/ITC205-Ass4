@@ -14,3 +14,9 @@ TEST:          	Look at the value of service charge immediately before the
                	printout of the service charge			   
 RESULT:		Values are wrong	
 ----------------
+HYPOTHESES 2:  	Values are not coming in correctly - bad input
+
+PREDICTION:	The service charges are not recorded correctly and will be $0.00
+TEST:		Inspect values coming into RecordServiceCtrl
+RESULT:		Cost is recorded with correct value (20)
+----------------
