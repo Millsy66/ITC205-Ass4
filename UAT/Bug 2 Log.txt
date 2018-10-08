@@ -1,0 +1,15 @@
+==============================================================================
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Hotel  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+==============================================================================
+(see separate screen shot word doc for screen shots of variable results of debug)
+
+BUG 2 - Service Charges charged to a room after checkout
+
+------------------------------------------------------------------------------
+HYPOTHESIS 1:  	Room is not checked for active booking during adding service
+
+PREDICTION:    	The service charges will be added to room without checking the room booking
+TEST:          	Look to see if room booking appears as active booking in Record Services Ctl			   
+RESULT:			Room appears as active booking	
+
+----------------
