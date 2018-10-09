@@ -27,3 +27,10 @@ TEST:			Look to see if active booking can be found
 RESULT:			Room appears as active booking
 
 ----------------
+HYPOTHESIS 4:	Booking not found in checkout  payment process to complete checkout process
+
+PREDICTION:		Active room not found
+TEST:			Look to see if active room booking can be found 
+RESULT:			Room appears as active booking
+
+----------------
