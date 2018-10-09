@@ -34,3 +34,10 @@ TEST:			Look to see if active room booking can be found
 RESULT:			Room appears as active booking
 
 ----------------
+HYPOTHESIS 5:	Room still active in Room at checkout()
+
+PREDICTION:		Active room found
+TEST:			Look to see if active room can be found 
+RESULT:			Room appears as active booking
+
+----------------
