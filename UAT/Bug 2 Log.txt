@@ -41,3 +41,10 @@ TEST:			Look to see if active room can be found
 RESULT:			Room appears as active booking
 
 ----------------
+HYPOTHESIS 6:	Active booking should be removed at Hotel Checkout() (Pseudo-code reference)
+
+PREDICTION:		Missing code to remove roomID from booking
+TEST:			Look to see if code removes active booking via roomID
+RESULT:			No code to remove room ID from active booking
+
+----------------
