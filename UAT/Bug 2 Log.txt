@@ -1,0 +1,57 @@
+==============================================================================
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Hotel  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+==============================================================================
+(see separate screen shot word doc for screen shots of variable results of debug)
+
+BUG 2 - Service Charges charged to a room after checkout
+
+------------------------------------------------------------------------------
+HYPOTHESIS 1:  	Room is not checked for active booking during adding service
+
+PREDICTION:    	The service charges will be added to room without checking the room booking
+TEST:          	Look to see if room booking appears as active booking in Record Services Ctl
+RESULT:			Room appears as active booking	
+
+----------------
+HYPOTHESIS 2:  	Error in finding active booking in Hotel
+
+PREDICTION:    	Booking will not be found
+TEST:			Look to see if active booking can be found in hotel
+RESULT:			Room appears as active booking		
+
+----------------
+HYPOTHESIS 3:	Booking not found in checkout to complete checkout process
+
+PREDICTION:		Booking will not be found to checkout of
+TEST:			Look to see if active booking can be found 
+RESULT:			Room appears as active booking
+
+----------------
+HYPOTHESIS 4:	Booking not found in checkout  payment process to complete checkout process
+
+PREDICTION:		Active room not found
+TEST:			Look to see if active room booking can be found 
+RESULT:			Room appears as active booking
+
+----------------
+HYPOTHESIS 5:	Room still active in Room at checkout()
+
+PREDICTION:		Active room found
+TEST:			Look to see if active room can be found 
+RESULT:			Room appears as active booking
+
+----------------
+HYPOTHESIS 6:	Active booking should be removed at Hotel Checkout() (Pseudo-code reference)
+
+PREDICTION:		Missing code to remove roomID from booking
+TEST:			Look to see if code removes active booking via roomID
+RESULT:			No code to remove room ID from active booking
+
+----------------
+HYPOTHESIS 7:	Adding code to remove active booking should address the bug
+
+PREDICTION:		Adding services will not be possible after checkout
+TEST:			add a booking, checkout then attempt to add services to same room without current booking
+RESULT:			Additional services cannot be added to checked out room - SOLVED
+
+----------------
