@@ -48,3 +48,10 @@ TEST:			Look to see if code removes active booking via roomID
 RESULT:			No code to remove room ID from active booking
 
 ----------------
+HYPOTHESIS 7:	Adding code to remove active booking should address the bug
+
+PREDICTION:		Adding services will not be possible after checkout
+TEST:			add a booking, checkout then attempt to add services to same room without current booking
+RESULT:			Additional services cannot be added to checked out room - SOLVED
+
+----------------
