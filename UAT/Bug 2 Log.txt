@@ -13,3 +13,10 @@ TEST:          	Look to see if room booking appears as active booking in Record 
 RESULT:			Room appears as active booking	
 
 ----------------
+HYPOTHESIS 2:  	Error in finding active booking in Hotel
+
+PREDICTION:    	Booking will not be found
+TEST:			Look to see if active booking can be found in hotel
+RESULT:			Room appears as active booking		
+
+----------------
